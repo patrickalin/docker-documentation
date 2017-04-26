@@ -80,7 +80,8 @@
         <h2>Documentation Nginx</h2>
         <p>
           <img src="img/nginx.png"  width="60">
-          <a class="btn btn-lg btn-primary" href="https://doc.services.alin.be" target="_blank" role="button">Documentation</a>
+          <a class="btn btn-lg btn-primary" href="https://documentation.services.alin.be" target="_blank" role="button">Documentation</a>
+	  <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-documentation" target="_blank" role="button">Github</a>
         </p>
       </div>
 
@@ -89,23 +90,28 @@
         <p>
           <img src="img/traefik.png"  width="60">
           <a class="btn btn-lg btn-primary" href="https://traefik.services.alin.be" target="_blank" role="button">Traefik</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-traefik" target="_blank" role="button">Github</a>
         </p>
       </div>
 
       <div class="jumbotron">
-        <h2>Docker Monitoring</h2>
+        <h2>Docker Monitoring : portainer / Swarm-visualizer</h2>
         <p>
           <img src="img/portainer.png"  width="60">
           <a class="btn btn-lg btn-primary" href="https://portainer.services.alin.be" target="_blank" role="button">Portainer</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-portainer" target="_blank" role="button">Github</a>
+          <a class="btn btn-lg btn-primary" href="https://visualizer.services.alin.be" target="_blank" role="button">Swarm visualizer</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-swarm-visualizer" target="_blank" role="button">Github</a>
 	  <pre> Login : admin </pre>
         </p>
       </div>
 
       <div class="jumbotron">
-        <h2>Docker Helloworld</h2>
+        <h2>Docker Tutum Helloworld</h2>
         <p>
           <img src="img/docker.png"  width="60">
           <a class="btn btn-lg btn-primary" href="https://helloworld.services.alin.be" target="_blank" role="button">Helloworld</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-helloworld" target="_blank" role="button">Github</a>
         </p>
       </div>
 
@@ -114,6 +120,7 @@
         <p>
           <img src="img/greenwall.png"  width="60">
           <a class="btn btn-lg btn-primary" href="https://monitoring.services.alin.be" target="_blank" role="button">Monitoring</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-monitoring" target="_blank" role="button">Github</a>
         </p>
       </div>
 
@@ -124,11 +131,14 @@
           <img src="img/mariadb.png"  width="60">
 
           <a class="btn btn-lg btn-primary" href="https://hello.services.alin.be/greeting" target="_blank" role="button">Hello</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-helloworld" target="_blank" role="button">Github</a>
           <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be" target="_blank" role="button">Employer Rest</a>
           <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/employer" target="_blank" role="button">Employer List</a>
           <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/metrics" target="_blank"> Employer Metrics </a>
           <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/metrics" target="_blank"> Employer Health</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-employer" target="_blank" role="button">Github</a>
           <a class="btn btn-lg btn-primary" href="https://file.services.alin.be" target="_blank" role="button">File</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-file" target="_blank" role="button">Github</a>
           <pre> CREATE TABLE employer.employer (
     id BIGINT(20) NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) NULL DEFAULT NULL,
@@ -147,9 +157,7 @@ http://file.services.alin.be/archive/documents?registrationNumber=0418.217.577&d
           <a class="btn btn-lg btn-primary" href="https://api.services.alin.be/kong" target="_blank" role="button">API Manager</a>
           <a class="btn btn-lg btn-primary" href="https://apidashboard.services.alin.be" target="_blank" role="button">API Manager Dashboard</a>
           <pre>http://morpheus.alin.be:7012
-http://morpheus.alin.be:7010/kong
-Dashboard : http://api.services.alin.be/kong, admin
-Statd : morpheus.alin.be:7017</pre>
+Dashboard : http://api.services.alin.be/kong, admin</pre>
         </p>
       </div>
 
@@ -159,7 +167,7 @@ Statd : morpheus.alin.be:7017</pre>
           <img src="img/kong.png"  width="60"><img src="img/springboot.png"  width="60">
           <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/hello" target="_blank" role="button">Hello</a>
           <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/employer" target="_blank" role="button">Employer</a>
-          <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/f" target="_blank" role="button">File</a>
+          <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/file" target="_blank" role="button">File</a>
           <pre> Login : admin
 Hello with rate limit  </pre>
         </p>
@@ -171,10 +179,22 @@ Hello with rate limit  </pre>
           <img src="img/grafana.png" width="60"><img src="img/graphite.png" width="60"><img src="img/statsd.svg" width="60">
           <a class="btn btn-lg btn-primary" href="https://apistat.services.alin.be/" target="_blank" role="button">Grafana</a>
           <a class="btn btn-lg btn-primary" href="https://alert.services.alin.be/" target="_blank" role="button">Grafana alert</a>
+          <a class="btn btn-lg btn-primary" href="https://statsd.services.alin.be/" target="_blank" role="button">Statsd</a>
+          <a class="btn btn-lg btn-primary" href="https://statsd.services.alin.be/dashboard" target="_blank" role="button">Statsd dashboard</a>
           <pre> Login : admin 
 Send to Statd 7017
 echo "deploys.test.myservice:1|c" | nc -w 1 -u localhost 7017
 Datasource : http://morpheus.alin.be:7051</pre>
+        </p>
+      </div>
+
+
+      <div class="jumbotron">
+        <h2>Home-assistant</h2>
+        <p>
+          <img src="img/homeassistant.png" width="60">
+          <a class="btn btn-lg btn-primary" href="https://homeassistant.services.alin.be/" target="_blank" role="button">Home-assistant</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-homeassistant" target="_blank" role="button">Github</a>
         </p>
       </div>
 
@@ -246,6 +266,11 @@ Origin<br>
 http://1611l22043a.smals-mvm.be:7200<br>
 File <br> 
 
+
+apt install libttspico-utils<br>
+apt install sox<br>
+pico2wave -l fr-FR -w test.wav "Faites demi-tour dès que possible !"; 
+play test.wav;
 
 
    <!-- Bootstrap core JavaScript
