@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   doc:
-    image: nginx:1.13.1-alpine
+    image: nginx:1.13.3-alpine
     container_name: documentation
     ports:
      - "7200:80"
