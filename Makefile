@@ -29,3 +29,6 @@ gitAddVersion:
 	git add Dockerfile
 	git commit -m "New version Dockerfile"
 	git push
+
+sNode:
+	docker node ls
