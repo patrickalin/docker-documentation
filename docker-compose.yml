@@ -16,9 +16,6 @@ services:
         - traefik.frontend.rule=Host:documentation.services.alin.be
         - traefik.frontend.entryPoints=http,https
         - traefik.backend.loadbalancer.method=wrr
-#        - traefik.backend=documentation
-#    ports:
-#     - "7200:80"
     volumes:
      - $PWD/html/:/usr/share/nginx/html
     environment:
