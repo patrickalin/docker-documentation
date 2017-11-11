@@ -3,8 +3,8 @@
 SERVICE="documentation"
 
 OPTION=$(whiptail --title $SERVICE --menu "Choose your option" 15 60 4 \
-"1" "Start service $SERVICE"  \
-"2" "Restart service $SERVICE" \
+"1" "Build $SERVICE" \
+"2" "Start service $SERVICE" \
 "3" "Stop service $SERVICE" 3>&1 1>&2 2>&3)
  
 exitstatus=$?
@@ -16,7 +16,8 @@ fi
 
 case "$OPTION" in
 
-1)  docker stack deploy --compose-file docker-compose.yml $SERVICE
+1)  cd documentation
+    docker build -t documentation .
     ;;
 2)  docker stack remove  $SERVICE
     sleep 3

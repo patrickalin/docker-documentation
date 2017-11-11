@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   documentation:
-    image: nginx:1.13.5-alpine
+    image: documentation
     deploy:
       replicas: 2
       resources:
@@ -16,11 +16,6 @@ services:
         - traefik.frontend.rule=Host:documentation.services.alin.be
         - traefik.frontend.entryPoints=http,https
         - traefik.backend.loadbalancer.method=wrr
-    volumes:
-     - $PWD/html/:/usr/share/nginx/html
-    environment:
-     - NGINX_HOST=documentation.servicess.alin.be
-     - NGINX_PORT=80
 
 networks:
   default:
