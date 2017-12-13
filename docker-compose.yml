@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   documentation:
-    image: documentation
+    image: documentation-image
     deploy:
       replicas: 2
       resources:

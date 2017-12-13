@@ -1,10 +1,11 @@
 #!/bin/bash
 
 SERVICE="documentation"
+IMAGE="$SERVICE-image"
 
 OPTION=$(whiptail --title $SERVICE --menu "Choose your option" 15 60 4 \
 "1" "Build $SERVICE" \
-"2" "Start service $SERVICE" \
+"2" "(Re)Start service $SERVICE" \
 "3" "Stop service $SERVICE" 3>&1 1>&2 2>&3)
  
 exitstatus=$?
@@ -16,8 +17,9 @@ fi
 
 case "$OPTION" in
 
-1)  cd documentation
-    docker build -t documentation .
+1)  cd $IMAGE
+    docker build -t $IMAGE .
+    docker tag $IMAGE registry-srv.services.alin.be/$IMAGE
     ;;
 2)  docker stack remove  $SERVICE
     sleep 3
