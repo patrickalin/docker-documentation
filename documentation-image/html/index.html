@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Admin</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h2>Documentation Nginx</h2>
+        <p>
+          <img src="img/nginx.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="https://documentation.services.alin.be" target="_blank" role="button">Documentation</a>
+	  <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-documentation" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Traefik</h2>
+        <p>
+          <img src="img/traefik.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="https://traefik.services.alin.be" target="_blank" role="button">Traefik</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-traefik" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Docker Monitoring : portainer / Swarm-visualizer</h2>
+        <p>
+          <img src="img/portainer.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="https://portainer.services.alin.be" target="_blank" role="button">Portainer</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-portainer" target="_blank" role="button">Github</a>
+          <a class="btn btn-lg btn-primary" href="https://visualizer.services.alin.be" target="_blank" role="button">Swarm visualizer</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-swarm-visualizer" target="_blank" role="button">Github</a>
+	  <pre> Login : admin </pre>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Docker Tutum Helloworld</h2>
+        <p>
+          <img src="img/docker.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="https://helloworld.services.alin.be" target="_blank" role="button">Helloworld</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-helloworld" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Monitoring</h2>
+        <p>
+          <img src="img/greenwall.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="https://monitoring.services.alin.be" target="_blank" role="button">Monitoring</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-monitoring" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Micro Services before API manager</h2>
+        <p>
+          <img src="img/springboot.png"  width="60">
+          <img src="img/mariadb.png"  width="60">
+
+          <a class="btn btn-lg btn-primary" href="https://hello.services.alin.be/greeting" target="_blank" role="button">Hello</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-helloworld" target="_blank" role="button">Github Java</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-msHello" target="_blank" role="button">Github Spring</a>
+          <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be" target="_blank" role="button">Employer Rest</a>
+          <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/employer" target="_blank" role="button">Employer List</a>
+          <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/metrics" target="_blank"> Employer Metrics </a>
+          <a class="btn btn-lg btn-primary" href="https://employer.services.alin.be/metrics" target="_blank"> Employer Health</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-employer" target="_blank" role="button">Github Java</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-msEmployer" target="_blank" role="button">Github Spring</a>
+          <a class="btn btn-lg btn-primary" href="https://file.services.alin.be" target="_blank" role="button">File</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/microservice-file" target="_blank" role="button">Github Java</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-msFile" target="_blank" role="button">Github Spring</a>
+          <pre> CREATE TABLE employer.employer (
+    id BIGINT(20) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NULL DEFAULT NULL,
+    registrationnumber VARCHAR(255) NULL DEFAULT NULL,
+    PRIMARY KEY (id)
+)	</pre>
+        <pre>http://file.services.alin.be/archive/upload?registrationNumber=123456&date=2017-01-01
+http://file.services.alin.be/archive/documents?registrationNumber=0418.217.577&date=2017-01-01</pre>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>API Manager</h2>
+        <p>
+          <img src="img/kong.png"  width="60"><img src="img/postgresql.png" width="40">
+          <a class="btn btn-lg btn-primary" href="https://api.services.alin.be/kong" target="_blank" role="button">API Manager</a>
+         <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-kong" target="_blank" role="button">Github</a>
+          <a class="btn btn-lg btn-primary" href="https://apidashboard.services.alin.be" target="_blank" role="button">API Manager Dashboard</a>
+          <pre>http://kong:8001
+Dashboard : http://api.services.alin.be/kong, admin</pre>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Micro Service after API manager</h2>
+        <p>
+          <img src="img/kong.png"  width="60"><img src="img/springboot.png"  width="60">
+          <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/hello" target="_blank" role="button">Hello</a>
+          <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/employer" target="_blank" role="button">Employer</a>
+          <a class="btn btn-lg btn-primary" href="http://api.services.alin.be/file" target="_blank" role="button">File</a>
+          <pre> Login : admin
+Hello with rate limit  </pre>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Api Manager Metrics</h2>
+        <p>
+          <img src="img/grafana.png" width="60"><img src="img/graphite.png" width="60"><img src="img/statsd.svg" width="60">
+          <a class="btn btn-lg btn-primary" href="https://apistat.services.alin.be/" target="_blank" role="button">Grafana</a>
+          <a class="btn btn-lg btn-primary" href="https://alert.services.alin.be/" target="_blank" role="button">Grafana alert</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-grafana" target="_blank" role="button">Github</a>
+          <a class="btn btn-lg btn-primary" href="https://statsd.services.alin.be/" target="_blank" role="button">Statsd</a>
+          <a class="btn btn-lg btn-primary" href="https://statsd.services.alin.be/dashboard" target="_blank" role="button">Statsd dashboard</a>
+          <pre> Login : admin 
+Send to Statd 7017
+echo "deploys.test.myservice:1|c" | nc -w 1 -u localhost 7017
+Datasource : http://morpheus.alin.be:7051</pre>
+        </p>
+      </div>
+
+
+      <div class="jumbotron">
+        <h2>Home-assistant</h2>
+        <p>
+          <img src="img/homeassistant.png" width="60">
+          <a class="btn btn-lg btn-primary" href="https://homeassistant.services.alin.be/" target="_blank" role="button">Home-assistant</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-homeassistant" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+
+      <div class="jumbotron">
+        <h2>Bloomsky</h2>
+        <p>
+          <img src="img/bloomsky.png" width="60">
+          <a class="btn btn-lg btn-primary" href="https://bloomsky.services.alin.be/" target="_blank" role="button">Bloomsky</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-bloomsky" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Vue.js</h2>
+        <p>
+          <img src="img/vue.png" width="60"><img src="img/caddy.png" width="60">
+          <a class="btn btn-lg btn-primary" href="https://doc.services.alin.be/empl/" target="_blank" role="button">Vue.js</a>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Api Manager Metrics</h2>
+        <p>
+          <pre> Todo : mail Alert, monitoring</pre>
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Logs</h2>
+        <p>
+          <img src="img/kibana.png"  width="60"><img src="img/elastic.svg" width="60"><img src="img/logstash.png" width="60">
+          <a class="btn btn-lg btn-primary" href="http://kibana.services.alin.be/" target="_blank" role="button">Kibana</a>
+          <a class="btn btn-lg btn-info" href="https://github.com/patrickalin/docker-elk" target="_blank" role="button">Github</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+<li> Source control <img src="img/gitlab.svg" width="60"></li>
+        <ul>
+        <li> <a href="http://1611l22043a.smals-mvm.be:7100" target="_blank"> Gitlab 7100 (root) </a></li>
+        </ul>
+<hr>
+
+<ul>
+<li> PAAS <img src="img/openshift.png"  width="60"></li>
+        <ul>
+        <li> <a href="https://paas.gcloud.belgium.be/console/" target="_blank"> Openshift </a></li>
+        </ul>
+<li> VMAAS <img src="img/openstack.png"  width="60"></li>
+        <ul>
+        <li> <a href="https://openstack.gcloud.belgium.be/" target="_blank"> Openstack </a></li>
+        </ul>
+<li> Doc PAAS/VMAAS </li>
+        <ul>
+        <li> <a href="https://gcloud.belgium.be/doc/" target="_blank"> Doc Gcloud </a></li>
+        </ul>
+<li> Source control <img src="img/gitlab.svg" width="60"></li>
+        <ul>
+        <li> <a href="https://git.gcloud.belgium.be/" target="_blank"> Gitlab</a></li>
+        </ul>
+<li> Repository <img src="img/artifactory.png"  width="60"></li>
+        <ul>
+        <li> <a href="https://repo.gcloud.belgium.be/" target="_blank"> Artifactory</a></li>
+        </ul>
+</ul>
+
+
+
+<hr>
+Test :
+<br>
+ curl -H "Content-Type: application/json" -X POST -d '{"name":"S.A.B.C.A","registrationNumber":"0308.357.555"}' http://localhost:7040/employer
+<br>
+ curl -H "Content-Type: application/json" -X POST -d '{"name":"SONACA","registrationNumber":"0418.217.577"}' http://localhost:7040/employer
+<br> 
+CATERPILAA 0401.633.250
+<br>
+http://1611l22043a.smals-mvm.be:7020/archive/upload?registrationNumber=123456&date=2017-01-01<br>
+Origin<br>
+http://1611l22043a.smals-mvm.be:7200<br>
+File <br> 
+
+
+apt install libttspico-utils<br>
+apt install sox<br>
+pico2wave -l fr-FR -w test.wav "Faites demi-tour dès que possible !"; 
+play test.wav;
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
