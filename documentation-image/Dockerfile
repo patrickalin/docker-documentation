@@ -1,4 +1,4 @@
-FROM nginx:1.13.7-alpine
+FROM nginx:1.13.8-alpine
 COPY html/ /usr/share/nginx/html
 COPY .htpasswd /etc/nginx/.htpasswd
 COPY conf.d /etc/nginx/conf.d/
