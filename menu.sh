@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVICE="documentation"
+SERVICE="$(basename `pwd` | cut -d'-' -f 2)"
 IMAGE="$SERVICE-image"
 
 OPTION=$(whiptail --title $SERVICE --menu "Choose your option" 15 60 4 \
@@ -19,7 +19,6 @@ case "$OPTION" in
 
 1)  cd $IMAGE
     docker build -t $IMAGE .
-    docker tag $IMAGE registry-srv.services.alin.be/$IMAGE
     ;;
 2)  docker stack remove  $SERVICE
     sleep 3
