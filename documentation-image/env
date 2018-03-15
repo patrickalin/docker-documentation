@@ -1,0 +1,9 @@
+IMAGE_SRC=nginx
+TAG_SRC=1.13.9-alpine
+IMAGE_DEST=documentation-image
+TAG_DEST=v1
+REGISTRY=registry.services.alin.be
+
+GREEN='\e[1;32m'
+NC='\e[0m'
+echo -e "$GREEN $REGISTRY:$IMAGE:$TAG $NC"

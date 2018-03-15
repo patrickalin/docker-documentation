@@ -1,4 +1,4 @@
-FROM nginx:1.13.8-alpine
+FROM registry.services.alin.be/nginx:v1
 COPY html/ /usr/share/nginx/html
 COPY .htpasswd /etc/nginx/.htpasswd
 COPY conf.d /etc/nginx/conf.d/

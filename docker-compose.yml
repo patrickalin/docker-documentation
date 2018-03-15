@@ -1,8 +1,8 @@
-version: '3.4'
+version: '3.5'
 
 services:
   documentation:
-    image: documentation-image
+    image: registry.services.alin.be/documentation-image:v1
     deploy:
       replicas: 1
       resources:
