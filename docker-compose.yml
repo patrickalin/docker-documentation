@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   documentation:
-    image: registry.services.alin.be/documentation-image:v1
+    image: registry.services.alin.be/documentation-alin:v1
     deploy:
       replicas: 1
       resources:
