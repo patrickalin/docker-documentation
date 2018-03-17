@@ -1,9 +1,14 @@
-IMAGE_SRC=nginx
-TAG_SRC=1.13.9-alpine
-IMAGE_DEST=documentation-image
-TAG_DEST=v1
-REGISTRY=registry.services.alin.be
-
+RED='\e[1;31m'
+BLUE='\e[1;34m'
 GREEN='\e[1;32m'
 NC='\e[0m'
-echo -e "$GREEN $REGISTRY:$IMAGE:$TAG $NC"
+
+IMAGE_SRC=nginx
+TAG_SRC=1.13.9-alpine
+IMAGE_DEST=documentation
+TAG_DEST=v1
+REGISTRY=registry.services.alin.be
+POSTFIX="alin"
+
+echo -e "From : $GREEN $IMAGE_SRC:$TAG_SRC $NC"
+echo -e "To : $GREEN $REGISTRY/$IMAGE_DEST-$POSTFIX:$TAG_DEST $NC"
