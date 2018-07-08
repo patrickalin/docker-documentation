@@ -1,5 +1,5 @@
 #!/bin/bash
-# v0.3
+# v0.4
 DIRECTORY=$(cd `dirname $0` && pwd)
 cd $DIRECTORY
 
@@ -9,10 +9,9 @@ set -e
 SERVICE="$(basename `pwd` | cut -d'-' -f 2)"
 IMAGE="$SERVICE-image"
 
+if [ -d "$IMAGE" ]; then
 source ./$IMAGE/env
 FROM="($IMAGE_SRC : $TAG_SRC)"
-
-if [ -d "$IMAGE" ]; then
 OPTION=$(whiptail --title $SERVICE --menu "Choose your option" 15 60 4 \
 "1" "Build from $FROM" \
 "2" "(Re)Start service $SERVICE" \

@@ -4,7 +4,7 @@ GREEN='\e[1;32m'
 NC='\e[0m'
 
 IMAGE_SRC=nginx
-TAG_SRC=1.13.9-alpine
+TAG_SRC=1.14.0-alpine
 IMAGE_DEST=documentation
 TAG_DEST=v1
 REGISTRY=registry.services.alin.be
